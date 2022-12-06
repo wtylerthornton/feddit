@@ -96,3 +96,7 @@ body {
   clear: both;
   display: table;
 }
+
+img {
+  max-width: 100%;
+}
