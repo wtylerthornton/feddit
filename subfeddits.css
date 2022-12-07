@@ -30,16 +30,16 @@ html {
     color: white;
 }
 
-.posts-1 {
-    padding: 30px;
+.posts-border {
+    padding: 10px;
     background-color: grey;
     color: white;
     font-size: larger;
     font-weight: bold;
 }
 
-.posts-2 {
-    padding: 30px;
+.posts-body {
+    padding: 20px;
     background-color: lightgrey;
     color: black;
     font-size: larger;
