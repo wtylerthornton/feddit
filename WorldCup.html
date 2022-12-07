@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>2022 Fifa World Cup</title>
+    <link rel="stylesheet" href="subfeddits.css">
+</head>
 <body>
-    <head>
-        <title>2022 Fifa World Cup</title>
-        <link rel="stylesheet" href="subfeddits.css">
-    </head>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="AboutUs.html">About</a>
@@ -21,10 +21,29 @@
     <div style="padding: 50px; text-align: center; background-color: #474e5d; color: white">
         <img src="wc.png" alt="soccer" style="width:15%; text-align:center">
     </div>
-    <div class="posts-1">Netherlands beats USA 3-1</div>
-    <div class="posts-2">Argentina beats Australia 2-1</div>
-    <div class="posts-1">France beats Poland 3-1</div>
-    <div class="posts-2">England beats Senegal 3-0</div>
+
+    <div id="Posts"></div>
+
+    <script>
+        let posts_array = [
+            "Netherlands beats USA 3-1",
+            "Argentina beats Australia 2 - 1",
+            "France beats Poland 3-1",
+            "England beats Senegal 3-0"
+        ];
+
+        for (const post_text of posts_array) {
+            let post_border = document.createElement("div");
+            post_border.className = "posts-border";
+            let post_body = document.createElement("div");
+            post_body.className = "posts-body";
+            let text_node = document.createTextNode(post_text);
+
+            post_body.appendChild(text_node);
+            post_border.appendChild(post_body);
+            document.getElementById("Posts").appendChild(post_border);
+        }
+    </script>
 
     <footer>&copy; 2022 Feddit. This website is created by UHD students</footer>
 </body>
