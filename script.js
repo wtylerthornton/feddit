@@ -19,7 +19,8 @@ let users = {
 let username;
 let password;
 
-function login() {
+function login(e) {
+    e.preventDefault();
     username = document.querySelector("#username").value;
     password = document.querySelector("#password").value;
     if (username in users) {
